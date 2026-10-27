@@ -1,0 +1,17 @@
+# Exclude text files as requested
+*.txt
+
+# Node / Angular
+**/node_modules/
+**/.angular/
+**/dist/
+npm-debug.log*
+
+# .NET / Visual Studio
+**/bin/
+**/obj/
+**/appsettings.json
+**/appsettings.*.json
+**/.vs/
+*.user
+*.suo
