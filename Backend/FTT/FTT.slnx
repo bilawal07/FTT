@@ -1,3 +1,6 @@
 <Solution>
-  <Project Path="FTT.Auth/FTT.Auth.csproj" />
+  <Project Path="FTT.Api/FTT.Api.csproj" />
+  <Project Path="FTT.Application/FTT.Application.csproj" />
+  <Project Path="FTT.Domain/FTT.Domain.csproj" />
+  <Project Path="FTT.Infrastructure/FTT.Infrastructure.csproj" />
 </Solution>
