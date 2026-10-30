@@ -1,6 +1,0 @@
-@FTT.Auth_HostAddress = http://localhost:5136
-
-GET {{FTT.Auth_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

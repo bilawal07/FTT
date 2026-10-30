@@ -1,0 +1,42 @@
+@FTT.Api_HostAddress = http://localhost:5224
+
+### 1. Register User
+POST {{FTT.Api_HostAddress}}/api/auth/register
+Content-Type: application/json
+
+{
+  "fullName": "Bilawal Hussain",
+  "username": "bilawal",
+  "email": "bilawal@example.com",
+  "password": "Password123!",
+  "phoneNumber": "+92 300 1234567",
+  "address": "Lahore, Pakistan",
+  "avatarColor": "#2563EB"
+}
+
+### 2. Login User
+POST {{FTT.Api_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "usernameOrEmail": "bilawal",
+  "password": "Password123!"
+}
+
+### 3. Get Current User Profile & Workspaces
+GET {{FTT.Api_HostAddress}}/api/auth/me
+Authorization: Bearer <token>
+
+### 4. Create Workspace
+POST {{FTT.Api_HostAddress}}/api/workspace
+Content-Type: application/json
+Authorization: Bearer <token>
+
+{
+  "name": "Hussain Family",
+  "description": "Family Task Tracker Workspace"
+}
+
+### 5. Get My Workspaces
+GET {{FTT.Api_HostAddress}}/api/workspace
+Authorization: Bearer <token>
